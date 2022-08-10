@@ -20,8 +20,8 @@ func printPrimeNumbers(n int) {
 }
 
 func isNumberPrime(n int) bool {
-	for i := 1; i <= n; i++ {
-		if i != 1 && i != n && n%i == 0 {
+	for i := 1; i < n; i++ {
+		if i != 1 && n%i == 0 {
 			return false
 		}
 	}
